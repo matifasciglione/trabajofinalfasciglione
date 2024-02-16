@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .social svg {
+    width: 35px;
+    margin-right: 10px;
+    color: darkblue;
+  }
+  
+  .terms, .copy {
+    flex-grow: 0;
+  }
+  
+  .terms p, .copy p {
+    margin: 0;
+  }

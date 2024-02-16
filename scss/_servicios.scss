@@ -1,0 +1,43 @@
+.servicios {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+  
+    
+    margin: 20px auto;
+    max-width: 800px;
+  }
+  
+  .service {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    flex-basis: calc(33.33% - 20px);
+  
+    box-sizing: border-box;
+  
+    h3 {
+      margin-bottom: 10px;
+    }
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .btn-servicios {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
