@@ -1,0 +1,12 @@
+/* Estilos generales que se aplican a todas las páginas */
+/* Puedes colocar aquí estilos comunes para todo el sitio */
+
+/* Media query para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    /* Estilos específicos para pantallas más pequeñas */
+    /* Puedes ajustar aquí estilos para hacer tu sitio responsive en dispositivos móviles */
+    .portfolio .item {
+        width: calc(100% - 30px);
+    }
+    /* Aquí puedes agregar más reglas de estilo para ajustar el diseño en pantallas más pequeñas */
+}

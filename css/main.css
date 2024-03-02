@@ -1,55 +1,23 @@
-body {
-  margin: 0;
-  padding: 0;
-}
-
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-}
-
-.logo img {
-  max-width: 100px;
-}
-
-.menu {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-.menu li {
-  margin-right: 20px;
-}
-.menu li:last-child {
-  margin-right: 0;
-}
-.menu a {
-  text-decoration: none;
-  color: #333;
-}
-
-.menu-icon {
-  display: none;
-}
-
-@media only screen and (max-width: 768px) {
-  .menu {
-    display: none;
+@charset "UTF-8";
+/* Estilos generales que se aplican a todas las páginas */
+/* Puedes colocar aquí estilos comunes para todo el sitio */
+/* Media query para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+  /* Estilos específicos para pantallas más pequeñas */
+  /* Puedes ajustar aquí estilos para hacer tu sitio responsive en dispositivos móviles */
+  .portfolio .item {
+    width: calc(100% - 30px);
   }
-  .menu-icon {
-    display: block;
-    cursor: pointer;
-  }
-  .hamburger {
-    width: 30px;
-    height: 3px;
-    background-color: #333;
-    margin: 5px;
-  }
+  /* Aquí puedes agregar más reglas de estilo para ajustar el diseño en pantallas más pequeñas */
 }
+.navbar-brand {
+  margin-right: auto;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -271,42 +239,43 @@ button {
   cursor: pointer;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f0f0f0;
-}
-
 .portfolio {
   display: flex;
-  justify-content: space-around;
-  align-items: stretch;
-  flex-wrap: wrap;
-  margin: 20px auto;
-  max-width: 800px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  /* Para permitir desplazamiento horizontal si los elementos no caben en la pantalla */
 }
 
 .item {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
+  flex: 0 0 25%;
+  /* Establece el ancho de cada elemento al 25% del contenedor padre */
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
   text-align: center;
-  flex: 1;
-  margin: 0 10px;
   box-sizing: border-box;
+  /* Asegura que el padding no afecte al ancho del elemento */
+  white-space: nowrap;
+  /* Evita que el texto se divida en múltiples líneas */
 }
 .item img {
   max-width: 100%;
   height: auto;
-  margin-bottom: 10px;
+  border-radius: 50%;
+  max-height: 150px;
+  /* Establece una altura máxima para las imágenes */
 }
-.item h2, .item p {
-  margin-bottom: 10px;
+.item h2 {
+  margin-top: 10px;
+  font-size: 1.5em;
+}
+.item p {
+  margin-top: 10px;
 }
 .item a {
   display: inline-block;
-  padding: 8px 20px;
+  margin-top: 10px;
+  padding: 5px 10px;
   background-color: #007bff;
   color: #fff;
   text-decoration: none;
